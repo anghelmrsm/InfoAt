@@ -13,47 +13,77 @@ body {
     color: #ffffff;
 }
 
-/* Stilizare secțiune principală */
-#prezentare {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 50px;
+#subiecte{
     padding-top: 100px;
-    background-color: #2e3b5b; /* Fundal albastru închis */
+    padding-bottom: 100px;
 }
 
-/* Card text */
-#prezentare article {
-    background-color: #3b4a75; /* Fundal pentru card */
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 800px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-#prezentare h1 {
+/* Centrare text pentru h1 */
+#subiecte h1 {
+    text-align: center;
     font-size: 26px;
+    margin-bottom: 20px;
     color: #ffffff;
-    margin-bottom: 15px;
 }
 
-#prezentare p {
-    font-size: 18px;
-    color: #eac65a;
-    line-height: 1.6;
+/* Stilizare tabel */
+#subiecte table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #3b4a75; /* Fundal tabel */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ffffff; /* Bordura generală a tabelului */
+}
+
+/* Celulele de tabel */
+#subiecte th, #subiecte td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff; /* Linie între rânduri */
+    border-right: 1px solid #ffffff; /* Linie între coloane */
+    color: #ffffff;
+}
+
+/* Elimină linia verticală din ultima coloană */
+#subiecte th:last-child, #subiecte td:last-child {
+    border-right: none;
+}
+
+/* Stil pentru rândul de opțiuni (header-ul tabelului) */
+#subiecte #optiuni {
+    background-color: #eac65a; /* Fundal galben pentru capul tabelului */
+    color: #2e3b5b;
     font-weight: bold;
 }
 
-/* Card imagine */
-#prezentare img {
-    width: 700px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+/* Stil pentru secțiunile speciale */
+#subiecte #sectiuni {
+    background-color: #4c5d85; /* Culoare diferită pentru secțiuni */
+    font-weight: bold;
 }
 
-#profile li{
-    list-style: none;
+/* Efect hover pe fiecare celulă individual */
+#subiecte td:hover, #subiecte th:not(#optiuni):hover {
+    background-color: #50639c; /* Culoare la hover */
+    cursor: pointer;
+} 
+
+/* Link-uri din tabel */
+#subiecte a {
+    color: #eac65a;
+    text-decoration: none; /* Fără subliniere */
+    font-weight: bold;
+}
+
+/* Link-urile rămân nesubliniate la hover */
+#subiecte a:hover {
+    text-decoration: none;
+    color: #f6e5b4; /* Schimbare ușoară de culoare la hover */
+}
+
+#subiecte > th{
+    display: flex;
 }
