@@ -1,0 +1,99 @@
+/* Stilizare footer */
+#final {
+    background-color: #6B8DD6;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Stilizare caseta newsletter */
+#caseta_newsletter {
+    background: #2e3b5b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+#caseta_newsletter h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #f6e5b4;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#newsletter input {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+#newsletter button {
+    background: #eac65a;
+    color: #2e3b5b;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#newsletter button:hover {
+    background: #f6e5b4;
+}
+
+/* Stilizare social media */
+#socializare {
+    background: #2e3b5b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+#socializare h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #f6e5b4;
+}
+
+#socializare ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+#socializare ul li {
+    display: inline-block;
+}
+
+#socializare ul li a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#socializare ul li a img:hover {
+    transform: scale(1.1);
+}
+
+/* Stilizare drepturi de autor */
+#drepturi {
+    font-size: 14px;
+    color: #2e3b5b;
+    text-align: center;
+    padding-top: 10px;
+}

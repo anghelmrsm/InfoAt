@@ -1,0 +1,59 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2e3b5b;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* Stilizare secțiune principală */
+#prezentare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    padding-top: 100px;
+    background-color: #2e3b5b; /* Fundal albastru închis */
+}
+
+/* Card text */
+#prezentare article {
+    background-color: #3b4a75; /* Fundal pentru card */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#prezentare h1 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#prezentare p {
+    font-size: 18px;
+    color: #eac65a;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* Card imagine */
+#prezentare img {
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#profile li{
+    list-style: none;
+}

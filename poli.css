@@ -1,0 +1,118 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2e3b5b;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* Stilizare navigație */
+nav#options-bar {
+    background-color: #3f517d;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Stilizare logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* Stilizare meniu */
+ul#options {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+ul#options > li {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+#contactBtn{
+    background-color: #D4AF37;
+}
+
+ul#options > li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+ul#options > li:hover {
+    background: #eac65a;
+}
+
+ul#options > li a:hover {
+    color: #2e3b5b;
+}
+
+/* Dropdown Styling */
+ul#subiecte-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f6e5b4;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+
+ul#options > li:hover ul#subiecte-dropdown {
+    display: block;
+    border-radius: 5px;
+}
+
+ul#subiecte-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #eac65a;
+    text-align: center;
+    border-radius: 5px;
+}
+
+ul#subiecte-dropdown li:last-child {
+    border-bottom: none;
+}
+
+ul#subiecte-dropdown li a {
+    color: #2e3b5b;
+    text-decoration: none;
+    display: block;
+}
+
+ul#subiecte-dropdown li a:hover {
+    background-color: #eac65a;
+    border-radius: 5px;
+}
