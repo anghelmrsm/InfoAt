@@ -1,0 +1,6 @@
+HEADER
+
+Bara cu mai multe sectiuni - Home, subiecte anii trecuti (meniu drop-down), simulare, capitole
+
+IDEE - Fa un formular care sa te ghideze catre ce facultate sa te duci
+
