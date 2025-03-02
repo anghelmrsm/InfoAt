@@ -84,6 +84,7 @@ body {
     color: #f6e5b4; /* Schimbare ușoară de culoare la hover */
 }
 
-#subiecte th a{
-    display: block;
+#subiecte th a, #subiecte td a {
+    display: block; /* Fiecare link apare pe un rând nou */
+    margin-bottom: 5px; /* Spațiu între link-uri pentru lizibilitate */
 }
