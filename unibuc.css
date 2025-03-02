@@ -84,6 +84,6 @@ body {
     color: #f6e5b4; /* Schimbare ușoară de culoare la hover */
 }
 
-#subiecte > th{
+#subiecte th a{
     display: block;
 }
